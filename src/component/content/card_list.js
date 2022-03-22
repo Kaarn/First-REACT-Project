@@ -3,6 +3,8 @@ import { toModel } from "../../models/card_model";
 import getAllCards from "../../services/card_list_service";
 import CardOne from "./card_one";
 
+import "../../assets/sass/cardList/style.css";
+
 const CardList = () => {
 
     const [cardList, setCardList] = useState([]);
@@ -35,7 +37,7 @@ const CardList = () => {
                 cardList &&
                 cardList.map(c => <CardOne key={(c.id)} card={c} />)
             }
-        </section>
+            </section>
         </Fragment>
     )
 }

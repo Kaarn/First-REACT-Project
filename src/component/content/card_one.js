@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../../assets/sass/cardOne/style.css";
+
 
 const CardOne = (props) => {
     return (
