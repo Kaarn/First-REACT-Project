@@ -1,3 +1,16 @@
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.sort select {
+  margin-top: 20px;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
