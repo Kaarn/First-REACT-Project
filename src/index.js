@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './component/app';
+import CardDesc from './component/content/card_desc';
+
+import './index.css';
+
 import reportWebVitals from './reportWebVitals';
+
 import {
   BrowserRouter as Router,
-  Switch,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 ReactDOM.render(
@@ -16,6 +19,7 @@ ReactDOM.render(
       <Routes>
         <Route path='/'>
           <Route index element={<App />} />
+          <Route path=":idCard" element={<CardDesc />} />
         </Route>
       </Routes>
   </Router>,
